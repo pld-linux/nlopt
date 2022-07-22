@@ -1,0 +1,12 @@
+diff -up nlopt-2.7.1/CMakeLists.txt._orig nlopt-2.7.1/CMakeLists.txt
+--- nlopt-2.7.1/CMakeLists.txt._orig	2021-12-03 19:38:01.000000000 +0100
++++ nlopt-2.7.1/CMakeLists.txt	2022-07-21 22:02:13.149422566 +0200
+@@ -296,7 +296,7 @@ endif ()
+ add_subdirectory (src/api)
+ 
+ if (NLOPT_PYTHON)
+-  find_package (PythonInterp)
++  find_package (PythonInterp 3)
+   find_package (PythonLibs ${PYTHON_VERSION_STRING} EXACT)
+   find_package (NumPy)
+ endif ()
